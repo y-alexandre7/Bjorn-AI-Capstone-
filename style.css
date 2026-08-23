@@ -1,0 +1,448 @@
+/*Basics*/
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Arimo:ital,wght@0,400..700;1,400..700&family=Rubik+Spray+Paint&family=Slackside+One&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    background-color: white;
+}
+
+#detailSection{
+    width: 48.5vw;
+    height: 95vh;
+    border-radius: 2vh;
+    background-image: url('detailsBackground.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attatchment: fixed;
+    position: relative;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .8);
+}
+
+#detailsBjornLogo{
+    position: absolute;
+    transform: translate(2vw, 2vh);
+    width: 15vw;
+}
+
+#glassesModel{
+    position: absolute;
+    width: 30vw;
+    transform: translate(8vw, 22vh);
+}
+
+#sloganText{
+    position: absolute;
+    transform: translate(2vw, 85vh);
+    color: #0f1020;
+    font-size: 1.5rem;
+}
+
+/*Display Wrapper*/
+#displayWrapper{
+    width: 41vw;
+    height: 100vh;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding-right: 9vw;
+    position: relative;
+    overflow: hidden;
+}
+
+
+#loginDisplayWrapper{
+    width: 30vw;
+    height: 85vh;
+    transition: .5s ease;
+}
+
+#displayWrapper.toRegister #loginDisplayWrapper{
+    transform: translateY(-100vh);
+}
+
+#loginDisplayTitle{
+    width: 30vw;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    font-family: "Arial", sans-serif;
+    font-size: 2.4rem;
+}
+
+#loginDisplaySubtitle{
+    width: 30vw;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    font-family: "Arial", sans-serif;
+    font-size: 1.2rem;
+    color: rgb(170, 170, 170);
+}
+
+
+.inputArea{
+    width: 30vw;
+    height: 12vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputContainer{
+    width: 30vw;
+    height: 6vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.inputContainer input{
+    width: 27vw;
+    height: 6vh;
+    background: none;
+    border: 1px solid #0F1020;
+    outline-color: #FF9F1C;
+    padding-left: 3vw;
+    border-radius: 2vh;
+}
+
+.inputContainer i{
+    position: absolute;
+    top: 50%;
+    left: 1vw;
+    transform: translateY(-50%);
+    color: #0F1020;
+    pointer-events: none;
+    transition: all .5s ease;
+    font-size: 1.2rem;
+}
+
+.inputContainer label {
+    position: absolute;
+    top: 50%;
+    left: 3vw;
+    transform: translateY(-50%);
+    font-size: 1.15rem;
+    font-family: "Arial", sans-serif;
+    color: rgb(180, 180, 180);
+    pointer-events: none;
+    transition: all .5s ease;
+}
+
+.inputContainer input:focus~label,
+.inputContainer input:valid~label{
+    top: 0;
+    left: 2vw;
+    background: white;
+    color: #FF9F1C;
+    font-size: 1rem;
+}
+
+.inputContainer input:focus~i,
+.inputContainer input:valid~i{
+    color: #FF9F1C;
+}
+
+#remember-forgotArea{
+    width: 30vw;
+    height: 5vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#passwordRecoveryLink{
+    color: black;
+    text-decoration: none;
+}
+
+#passwordRecoveryLink:hover{
+    text-decoration: underline;
+}
+
+#logInButtonArea{
+    width: 30vw;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logInButton{
+    width: 25vw;
+    height: 6vh;
+    font-size: 1.2rem;
+    background: #0F1020;
+    border: none;
+    border-radius: 2vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .5s ease;
+}
+
+#logInButton:hover{
+    background-color: #4e3d1fff;
+    transition: .5s ease;
+}
+
+#logInButton p{
+    width: 5vw;
+    color: white;
+    font-weight: 550;
+}
+
+#logInButton i{
+    color: #FF9F1C;
+}
+
+#otherLogInOptsArea{
+    width: 30vw;
+}
+
+#otherLogInTtlArea{
+    width: 30vw;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#otherLogInTtlArea hr{
+    width: 30vw;
+}
+
+#otherLogInTtl{
+    position: absolute;
+    background-color: white;
+    color: #0F1020;
+}
+
+#otherLogInBtnArea{
+    width: 30vw;
+    height: 10vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.otherLogInBtn{
+    width: 9vw;
+    height: 6avh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: 1px solid rgba(50, 50, 50, 0.5);
+    border-radius: 1vh;
+}
+
+.otherLogInBtnLgo{
+    width: 2vw;
+}
+
+#registerLinkArea{
+    width: 30vw;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#registerLinkText{
+    padding-right: 0.5vw;
+}
+
+#registerLink{
+    text-decoration: none;
+    color: #0F1020;
+}
+
+#registerLink:hover{
+    text-decoration: underline;
+}
+
+#loginErrorMessage{
+    width: 30vw;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 50, 0);
+}
+
+/*Register Display*/
+#registerDisplayWrapper{
+    width: 30vw;
+    height: 90vh;
+    position: absolute;
+    transform: translateY(100vh);
+}
+
+#displayWrapper.toRegister #registerDisplayWrapper{
+    transform: translateY(0);
+    transition: transform .5s ease;
+}
+
+#registerDisplayTitle{
+    width: 30vw;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    font-family: "Arial", sans-serif;
+    font-size: 2.4rem;
+}
+
+#registerDisplaySubTitle{
+    width: 30vw;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    font-family: "Arial", sans-serif;
+    font-size: 1.2rem;
+    color: rgb(170, 170, 170);
+}
+
+#acceptConditionsArea{
+    width: 30vw;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#readConditionsLink{
+    padding-left: 0.5vw;
+    color: #0F1020;
+    text-decoration: none;
+}
+
+#readConditionsLink:hover{
+    text-decoration: underline;
+}
+
+#registerButtonArea{
+    width: 30vw;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#registerButton{
+    width: 25vw;
+    height: 6vh;
+    font-size: 1.2rem;
+    background: #0F1020;
+    border: none;
+    border-radius: 2vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .5s ease;
+}
+
+#registerButton p{
+    width: 5vw;
+    color: white;
+    font-weight: 550;
+}
+
+#registerButton i{
+    color: #FF9F1C;
+}
+
+#registerButton:hover{
+    background-color: #4e3d1fff;
+    transition: .5s ease;
+}
+
+#otherRegisterOptsArea{
+    width: 30vw;
+    height: 15vh;
+}
+
+#otherRegisterTtlArea{
+    width: 30vw;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#otherRegisterTtlArea hr{
+    width: 30vw;
+}
+
+#otherRegisterTtl{
+    position: absolute;
+    background-color: white;
+    color: #0F1020;
+}
+
+#otherRegisterBtnArea{
+    width: 30vw;
+    height: 10vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.otherRegisterBtn{
+    width: 9vw;
+    height: 6avh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: 1px solid rgba(50, 50, 50, 0.5);
+    border-radius: 1vh;
+}
+
+.otherRegisterBtnLgo{
+    width: 2vw;
+}
+
+#logInLinkArea{
+    width: 30vw;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#logInLinkText{
+    padding-right: 0.5vw;
+}
+
+#logInLink{
+    color: #0F1020;
+    text-decoration: none;
+}
+
+#logInLink:hover{
+    text-decoration: underline;
+}
+
+#registerErrorMessage{
+    width: 30vw;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 50, 0);
+}
+

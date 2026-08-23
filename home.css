@@ -1,0 +1,418 @@
+/*Basics*/
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Arimo:ital,wght@0,400..700;1,400..700&family=Rubik+Spray+Paint&family=Slackside+One&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Side Panel*/
+#sidePanel{
+    width: 20vw;
+    height: 100vh;
+    background: rgb(232, 232, 232);
+    position: relative;
+}
+
+#logoSection{
+    width: 19vw;
+    height: 10vh;
+    display: flex;
+    padding-left: 1vw;
+    align-items: center;
+}
+
+#logoSection i{
+    color: #0f1020;
+    font-size: 1.5rem;
+    font-weight: 550;
+}
+
+#logoSection p{
+    padding-left: 1vw;
+    font-size: 1.5rem;
+    font-weight: 550;
+}
+
+.menuNavigationItem{
+    width: 20vw;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menuNavButton{
+    width: 15vw;
+    height: 6vh;
+    background-color: white;
+    border: none;
+    border-radius: 2vh;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-left: 1vw;
+    transition: .8s ease;
+}
+
+.menuNavButton:hover{
+    background-color: rgb(200, 200, 200);
+    transition: .8s ease;
+}
+
+.menuNavButton i{
+    color: #0f1020;
+}
+
+.menuNavButton p{
+    padding-left: 1vw;
+}
+
+#updgradeSection{
+    position: absolute;
+    transform: translateY(15vh);
+}
+
+#upgradeAccountBtn{
+    background-color: #0f1020;
+    color: white;
+    font-weight: 550;
+}
+
+#upgradeAccountBtn:hover{
+    background-color: #4e3d1fff;
+}
+
+#upgradeAccountBtn i{
+    color: #FF9F1C;
+}
+
+#upgradeAccountBtn p{
+    padding-left: 1vw;
+}
+
+#profileSection{
+    position: absolute;
+    transform: translateY(25vh);
+}
+
+#profileButton i{
+    color: #0f1020;
+}
+
+#profileButton p{
+    padding-left: 1vw;
+}
+
+/*Main Panel*/
+#mainPanel{
+    width: 80vw;
+    height: 100vh;
+    background-color: white;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+/*Upper Main Section*/
+#upperMainSection{
+    width: 80vw;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#productDetailWrapper{
+    width: 50vw;
+    height: 25vh;
+    border-radius: 5vh;
+    background-image: linear-gradient(to bottom right, #21223bff, #0f1020, black);
+    
+}
+
+#productDisplay1{
+    width: 50vw;
+    height: 20vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#glassesDisplay{
+    width: 18vw;
+    position: absolute;
+    transform: translate(-15vw, -4.5vh);
+}
+
+#detailText1{
+    position: absolute;
+    width: 25vw;
+    height: 18vh;
+    transform: translateX(10vw);
+    background: none;
+    resize: none;
+    border: none;
+    color: white;
+    font-size: 1.1rem;
+    padding-top: 1vh; 
+    padding-bottom: 1vh;
+    outline: none;
+    font-family: 'Arial', sans-serif;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    overflow-x: auto;
+}
+
+#detailText1 a{
+    color: white;
+    text-decoration: none;
+}
+
+#detailText1 a:hover{
+    text-decoration: underline;
+}
+
+/*Sequence Section*/
+#sequenceSection{
+    width: 50vw;
+    height: 5vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#sequenceSection div{
+    width: 1.2vh;
+    height: 1.2vh;
+    border-radius: 1vw;
+    
+}
+
+#seque1{
+    position: absolute;
+    transform: translateX(-1.1vw);
+    background: white;
+}
+
+#seque2{
+    position: absolute;
+    background: rgb(255, 255, 255, .8);
+}
+
+#seque3{
+    position: absolute;
+    transform: translateX(1.1vw);
+    background: rgba(255, 255, 255, .8);
+}
+/*Lower Main Section*/
+#lowerMainSection{
+    width: 80vw;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Lower Left Main Section*/
+#lowerLeftMainSect{
+    width: 40vw;
+    height: 70vh;
+}
+
+#whiteBoardTitleWrapper{
+    width: 40vw;
+    height: 6vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#whiteBoardTitle{
+    width: 20vw;
+    height: 6vh;
+    background: rgb(234, 234, 234);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-family: "Slackside One", cursive;
+    border-radius: 3vh;
+    text-align: center;
+    box-shadow: 0 0 10px black;
+}
+
+#photoSection{
+    width: 20vw;
+    height: 44vw;
+    display: flex;
+    justify-content: center
+}
+
+#photoSection{
+    width: 40vw;
+    height: 44vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#dividerSect{
+    position: absolute;
+    width: 1px;
+    height: 65vh;
+    background-color: rgb(100, 100, 100, .5);
+}
+
+/*Lower Right Main Section*/
+#lowerRightMainSect{
+    width: 40vw;
+    height: 70vh;
+}
+
+/*Device Section*/
+#deviceSection{
+    width: 40vw;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#deviceWrapper{
+    width: 30vw;
+    height: 40vh;
+    border-radius: 5vh;
+    background-image: url('detailsBackground.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attatchment: fixed;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .8);
+}
+
+#glassesModel{
+    position: absolute;
+    width: 25vw;
+    transform: translate(3vw, 5vh);
+}
+
+#modelTitleText{
+    position: absolute;
+    transform: translate(3vw, 30vh);
+    font-size: 1.2rem;
+    font-weight: 550;
+    font-family: 'Arial', sans-serif;
+}
+
+#glassesNameText{
+    position: absolute;
+    transform: translate(5vw, 34vh);
+    font-size: 1.rem;
+    font-weight: 550;
+    font-family: 'Arial', sans-serif;
+}
+
+
+/*Device Detail Section*/
+#deviceDetailSection{
+    width: 40vw;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#deviceDetailsWrapper{
+    width: 35vw;
+    height: 15vh;
+    background-color: #06060dff;
+    border-radius: 4vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#batteryLocationSection{
+    width: 20vw;
+    height: 15vh;
+}
+
+#batterySection{
+    width: 15vw;
+    height: 7.5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#batterySection i{
+    color: #FF9F1C;
+    font-size: 1.5rem;
+}
+
+#batterySection p{
+    color: white;
+    padding-left: 1vw;
+    font-size: 1.2rem;
+    font-family: 'Arial', sans-serif;
+    font-weight: 550;
+    width: 8vw;
+}
+
+#locationSection{
+    width: 15vw;
+    height: 7.5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#locationSection i{
+    color: #FF9F1C;
+    font-size: 1.2rem;
+}
+
+#locationSection p{
+    padding-left: 1vw;
+    color: white;
+    width: 8vw;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+#deviceCondition{
+    width: 15vw;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#deviceCondition i{
+    color: #FF9F1C;
+}
+
+#deviceCondition p{
+    color: rgb(245, 245, 245);
+    font-style: italic;
+    font-family: 'Arial', sans-serif;
+    width: 10vw;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    overflow-x: auto;
+    padding-left: 1vw;
+    
+}

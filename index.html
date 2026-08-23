@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <!--Details Section-->
+        <div id="detailSection">
+
+            <img src="bjornLogo.png" id="detailsBjornLogo">
+
+            <img src="glassesModel.png" id="glassesModel">
+
+            <h3 id="sloganText">Join Björn AI and save time on note taking</h3>
+        </div>
+
+        <!--Login and Register Display Wrapper-->
+        <div id="displayWrapper">
+
+            <div id="loginDisplayWrapper">
+                
+                <h2 id="loginDisplayTitle">Welcome Back.</h2>
+                <p id="loginDisplaySubtitle">Enter your email and password to login to your account.</p>
+
+                <form action="#">
+                    
+                    <div class="inputArea">
+                        <div class="inputContainer">
+                            <input id="loginEmailInput" type="email" required>
+                            <i class="fa-solid fa-envelope" id="loginEmailIcon"></i>
+                            <label>Enter Your Email</label>
+                        </div>
+                    </div>
+    
+                    <div class="inputArea">
+                        <div class="inputContainer">
+                            <input id="loginPasswordInput" type="password" required>
+                            <i class="fa-solid fa-lock"></i>
+                            <label>Enter Your Password</label>
+                        </div>
+                    </div>
+    
+                    <div id="remember-forgotArea">
+                        <p id="rememberMeLabel"><input id="rememberMeInput" type="checkbox"> Remember Me</p>
+    
+                        <a id="passwordRecoveryLink" href="#">Forgot your password?</a>
+                    </div>
+    
+                    <div id="logInButtonArea">
+                        <button id="logInButton">
+                            <p>Log In</p>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+    
+                    <div id="otherLogInOptsArea">
+                        <div id="otherLogInTtlArea">
+                            <hr>
+                            <p id="otherLogInTtl">Or Login With</p>
+                        </div>
+    
+                        <div id="otherLogInBtnArea">
+                            <button class="otherLogInBtn">
+                                <img src="Google Logo.png" class="otherLogInBtnLgo">
+                                <p>Google</p>
+                            </button>
+                            <button class="otherLogInBtn">
+                                <img src="Facebook Logo.png" class="otherLogInBtnLgo">
+                                <p>Facebook</p>
+                            </button>
+                            <button class="otherLogInBtn">
+                                <img src="Apple Logo.png" class="otherLogInBtnLgo">
+                                <p>Apple</p>
+                            </button>
+                        </div>
+    
+                     </div>
+                </form>
+
+                <div id="registerLinkArea">
+                    <p id="registerLinkText">Don't have an account?</p>
+                    <a id="registerLink" href="#">Create One</a>
+                </div>
+
+                <p id="loginErrorMessage">Error: Error MESSAGE</p>
+                
+            </div>
+
+            <div id="registerDisplayWrapper">
+
+                <h2 id="registerDisplayTitle">Welcome</h2>
+                <p id="registerDisplaySubTitle">Register here to create an account</p>
+
+                <form action="#">
+                    <div class="inputArea">
+                        <div class="inputContainer">
+                            <input id="registerUsernameInput" type="email" required>
+                            <i class="fa-solid fa-user" id="registerUsernameIcon"></i>
+                            <label>Create Your Username</label>
+                        </div>
+                    </div>
+
+                    <div class="inputArea">
+                        <div class="inputContainer">
+                            <input id="registerEmailInput" type="email" required>
+                            <i class="fa-solid fa-envelope" id="registerEmailIcon"></i>
+                            <label>Enter Your Email</label>
+                        </div>
+                    </div>
+
+                    <div class="inputArea">
+                        <div class="inputContainer">
+                            <input id="registerPasswordInput" type="email" required>
+                            <i class="fa-solid fa-lock" id="registerPasswordIcon"></i>
+                            <label>Create Your Password</label>
+                        </div>
+                    </div>
+
+                    <div id="acceptConditionsArea">
+                        <input id="rememberMeInput" type="checkbox"> 
+                        <a id="readConditionsLink" href="#">I accept the following terms and conditions</a>
+                    </div>
+    
+                    <div id="registerButtonArea">
+                        <button id="registerButton">
+                            <p>Create</p>
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+    
+                    <div id="otherRegisterOptsArea">
+                        <div id="otherRegisterTtlArea">
+                            <hr>
+                            <p id="otherRegisterTtl">Or Register With</p>
+                        </div>
+    
+                        <div id="otherRegisterBtnArea">
+                            <button class="otherRegisterBtn">
+                                <img src="Google Logo.png" class="otherRegisterBtnLgo">
+                                <p>Google</p>
+                            </button>
+                            <button class="otherRegisterBtn">
+                                <img src="Facebook Logo.png" class="otherRegisterBtnLgo">
+                                <p>Facebook</p>
+                            </button>
+                            <button class="otherRegisterBtn">
+                                <img src="Apple Logo.png" class="otherRegisterBtnLgo">
+                                <p>Apple</p>
+                            </button>
+                        </div>
+    
+                     </div>
+                </form>
+
+                <div id="logInLinkArea">
+                    <p id="logInLinkText">Already have an account?</p>
+                    <a id="logInLink" href="#">Login instead</a>
+                </div>
+
+                <p id="registerErrorMessage">Error: Error MESSAGE</p>
+                
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+        <script src="https://kit.fontawesome.com/cbd9f3e301.js" crossorigin="anonymous"></script>
+    </body>
+</html>
