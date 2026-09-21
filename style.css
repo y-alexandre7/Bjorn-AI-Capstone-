@@ -19,7 +19,7 @@ body{
     width: 48.5vw;
     height: 95vh;
     border-radius: 2vh;
-    background-image: url('detailsBackground.png');
+    background-image: linear-gradient(to bottom right, #21223bff, #0f1020, black); 
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -28,23 +28,51 @@ body{
     box-shadow: 0 0 10px rgba(0, 0, 0, .8);
 }
 
-#detailsBjornLogo{
+#logoSection{
+    width: 20vw;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    color: white;
     position: absolute;
-    transform: translate(2vw, 2vh);
-    width: 15vw;
+    top: 10%;
+    left: 6%;
 }
 
-#glassesModel{
-    position: absolute;
+#logoSection img{
+    width: 3vw;
+}
+
+#logoSection h2{
+    padding-left: 1vw;
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: 'Arial', sans-serif;
+}
+
+#caseDisplay{
     width: 30vw;
-    transform: translate(8vw, 22vh);
+    position: absolute;
+    left: 24%;
+    top: 25%;
+    transform: rotate(-1deg);
+}
+
+#glassesDisplay{
+    width: 30vw;
+    position: absolute;
+    left: 12%;
+    top: 39%;
 }
 
 #sloganText{
     position: absolute;
-    transform: translate(2vw, 85vh);
+    bottom: 8%;
+    left: 6%;
     color: #0f1020;
     font-size: 1.5rem;
+    color: white;
+    border-bottom: 1px solid rgb(255, 100, 0);
 }
 
 /*Display Wrapper*/
@@ -239,13 +267,17 @@ body{
 
 .otherLogInBtn{
     width: 9vw;
-    height: 6avh;
+    height: 6vh;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: white;
     border: 1px solid rgba(50, 50, 50, 0.5);
     border-radius: 1vh;
+}
+
+.otherLogInBtn:hover{
+    background: rgb(240, 240, 240);
 }
 
 .otherLogInBtnLgo{
@@ -402,7 +434,7 @@ body{
 
 .otherRegisterBtn{
     width: 9vw;
-    height: 6avh;
+    height: 6vh;
     display: flex;
     justify-content: center;
     align-items: center;

@@ -54,7 +54,7 @@ body{
 .menuNavButton{
     width: 15vw;
     height: 6vh;
-    background: none;
+    background-color: white;
     border: none;
     border-radius: 2vh;
     display: flex;
@@ -65,17 +65,12 @@ body{
 }
 
 .menuNavButton:hover{
-    background-color: rgb(245, 245, 245);
+    background-color: rgb(200, 200, 200);
     transition: .8s ease;
-    border-bottom: 3px solid #FF9F1C;
 }
 
 .menuNavButton i{
     color: #0f1020;
-}
-
-.menuNavButton:hover i{
-    color: #FF9F1C;
 }
 
 .menuNavButton p{
@@ -110,34 +105,123 @@ body{
     transform: translateY(25vh);
 }
 
+#profileButton i{
+    color: #0f1020;
+}
+
+#profileButton p{
+    padding-left: 1vw;
+}
+
 /*Main Panel*/
 #mainPanel{
     width: 80vw;
     height: 100vh;
     background-color: white;
-    overflow-y: scroll;
-    overflow-x: hidden;
 }
 
-#upperMainPanel{
+#pageTitle{
     width: 80vw;
-    height: 25vh;
+    height: 12vh;
     display: flex;
-    align-items: center;
     justify-content: center;
-    border: 1px solid blue;
+    align-items: center;
+    font-size: 2.5rem;
+    color: #0f1020;
 }
 
-#displaySection{
-    width: 22vw;
-    height: 25vh;
+#pageSubtitle{
+    width: 80vw;
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    color: #FF9F1C;
 }
 
-#upperDisplaySection{
-    width: 22vw;
-    height: 10vh;
+#lowerPageSection{
+    width: 80vw;
+    height: 80vh;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+}
+
+#flashcardsArea{
+    width: 60vw;
+    height: 78vh;
+    padding-top: 2vh;
+}
+
+.flashcardsRow{
+    width: 58vw;
+    height: 25vh;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+
+.flashcardsWrapper{
+    width: 15vw;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flashcardButton{
+    width: 10vw;
+    height: 27vh;
+    background: rgb(242, 242, 242);
+    border: none;
+    border-radius: 2vh;
+    
+}
+
+.flashcardTitleWrppr{
+    width: 10vw;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.flashcardButton:hover{
+    border: 1px solid #FF9F1C;
+}
+
+.flashcardTitleWrppr img{
+    width: 2vw;
+}
+
+.flashcardButton p{
+    width: 10vw;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.flashImageWrapper{
+    width: 10vw;
+    height: 15vh;
+}
+
+#createFlashcardsArea{
+    width: 20vw;
+    height: 80vh;
+    background: rgb(232, 232, 232);
+    border-top-left-radius: 2vh;
+    border-bottom-left-radius: 2vh;
+}
+
+#createFlashcardsTitle{
+    width: 20vw;
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: #0f1020;
 }

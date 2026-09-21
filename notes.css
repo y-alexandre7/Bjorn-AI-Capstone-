@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Arimo:ital,wght@0,400..700;1,400..700&family=Rock+Salt&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Side Panel*/
+#sidePanel{
+    width: 20vw;
+    height: 100vh;
+    background: rgb(232, 232, 232);
+    position: relative;
+}
+
+#logoSection{
+    width: 19vw;
+    height: 10vh;
+    display: flex;
+    padding-left: 1vw;
+    align-items: center;
+}
+
+#logoSection i{
+    color: #0f1020;
+    font-size: 1.5rem;
+    font-weight: 550;
+}
+
+#logoSection p{
+    padding-left: 1vw;
+    font-size: 1.5rem;
+    font-weight: 550;
+}
+
+.menuNavigationItem{
+    width: 20vw;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menuNavButton{
+    width: 15vw;
+    height: 6vh;
+    background-color: white;
+    border: none;
+    border-radius: 2vh;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-left: 1vw;
+    transition: .8s ease;
+}
+
+.menuNavButton:hover{
+    background-color: rgb(200, 200, 200);
+    transition: .8s ease;
+}
+
+.menuNavButton i{
+    color: #0f1020;
+}
+
+.menuNavButton p{
+    padding-left: 1vw;
+}
+
+#updgradeSection{
+    position: absolute;
+    transform: translateY(15vh);
+}
+
+#upgradeAccountBtn{
+    background-color: #0f1020;
+    color: white;
+    font-weight: 550;
+}
+
+#upgradeAccountBtn:hover{
+    background-color: #4e3d1fff;
+}
+
+#upgradeAccountBtn i{
+    color: #FF9F1C;
+}
+
+#upgradeAccountBtn p{
+    padding-left: 1vw;
+}
+
+#profileSection{
+    position: absolute;
+    transform: translateY(25vh);
+}
+
+#profileButton i{
+    color: #0f1020;
+}
+
+#profileButton p{
+    padding-left: 1vw;
+}
+
+/*Main Panel*/
+#mainPanel{
+    width: 80vw;
+    height: 100vh;
+    background-color: white;
+}
+
+#searchBarArea{
+    width: 80vw;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#searchBarWrapper{
+    width: 50vw;
+    height: 10vh;
+    background: #0f1020;
+    border-radius: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#searchBarWrapper i{
+    color: #FF9F1C;
+    font-size: 1.5rem;
+}
+
+#searchBarWrapper input{
+    width: 37vw;
+    height: 8vh;
+    padding-left: 1vw;
+    border-radius: 5vh;
+    outline-color: #FF9F1C;
+    color: #0f1020;
+    font-family: 'Rock Salt', cursive;
+}
+
+#searchBarButton{
+    width: 10vw;
+    height: 8vh;
+    border: none;
+    background: none;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 550;
+    border-radius: 5vh;
+}
+
+#searchBarButton:hover{
+    background-color: rgb(5, 5, 11);
+}
+
+#searchBarButton i{
+    font-size: 1.2rem;
+    color: #FF9F1C;
+    
+}
+
+
+/*Note Foloders Section*/
+#noteFolderSection{
+    width: 80vw;
+    height: 85vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    
+}
+
+.noteFolderRow{
+    width: 78vw;
+    height: 25vh;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    display: flex;
+    align-items: center;
+}
+
+#creativeFolderRow{
+    background: rgb(232, 232, 232);
+}
+
+.noteFolderArea{
+    width: 15vw;
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#createFolderArea{
+    width: 15vw;
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#createFolderButton{
+    width: 10vw;
+    height: 22vh;
+    background: none;
+    border: none;
+    display: block;
+}
+
+#createFolderIconSect{
+    width: 10w;
+    height: 17vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #0f1020;
+}
+
+#createFolderIconSect img{
+    width: 7.5vw;
+    height: 16.5vh;
+    
+}
+
+#createFolderButton:hover img{
+    border: 1px solid #FF9F1C;
+}
+
+#newNotesText{
+    width: 10vw;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    font-family: 'Arial', sans-serif;
+    font-weight: 550;
+}
+
+.folderTemplateButton{
+    width: 10vw;
+    height: 22vh;
+    background: none;
+    border: none;
+    display: block;
+}
+
+.folderTemplateIconSect{
+    width: 10w;
+    height: 17vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #0f1020;
+}
+
+.folderTemplateIconSect img{
+    width: 7.5vw;
+    height: 16.5vh;
+
+}
+
+.folderTemplateIconSect:hover img{
+    border: 1px solid #FF9F1C;
+}
+
+.folderTemplateText{
+    width: 10vw;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    font-family: 'Arial', sans-serif;
+    font-weight: 550;
+}

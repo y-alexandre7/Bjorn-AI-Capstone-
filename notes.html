@@ -3,15 +3,15 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="home.css">
+        <link rel="stylesheet" href="notes.css">
         <link rel="icon" type="image/x-icon" href="bjornIcon.png">
     </head>
     <body>
-        
+
         <div id="sidePanel">
             <div id="logoSection">
                 <i class="fa-solid fa-bars"></i>
-                <p>Deja Vu Menu</p>
+                <p>Björn AI Menu</p>
             </div>
 
             <div class="menuNavigationItem">
@@ -63,30 +63,55 @@
                 </button>
             </div>
         </div>
-        
+
         <div id="mainPanel">
             
-            <div id="upperMainPanel">
+            <div id="searchBarArea">
+                
+                <div id="searchBarWrapper">
+                    
+                    <input placeholder="Search for folder" id="searchBarInput">
+                    <button id="searchBarButton"><i class="fa-solid fa-magnifying-glass"></i> Search</button>
+                    
+                </div>
+                
+            </div>
 
-                <div id="displaySection">
+            <div id="noteFolderSection">
 
-                    <div id="upperDisplaySection">
-                        <div id="upperDisplayArea">
-                            <h2>Good morning User</h2>
-                        </div>
+                <div class="noteFolderRow" id="creativeFolderRow">
+                    
+                    <div class="noteFolderArea" id="createFolderArea">
+                        <button id="createFolderButton">
+                            
+                            <div id="createFolderIconSect">
+                                <img src="newNotesIcon.png">
+                            </div>
+                            
+                            <div id="newNotesText">
+                                <p>New Notebook</p>
+                            </div>
+                        </button>
                     </div>
 
-                    <div id="lowerDisplaySection">
-                        <div id="lowerDisplayArea"></div>
+                    <div class="noteFolderArea">
+                        <button class="folderTemplateButton">
+                            
+                            <div class="folderTemplateIconSect">
+                                <img src="mathNoteBook.png">
+                            </div>
+                            
+                            <div class="folderTemplateText">
+                                <p>Math Notes Template</p>
+                            </div>
+                        </button>
                     </div>
                 </div>
-
-                <div id=""></div>
                 
             </div>
             
         </div>
-        
+
         <script src="https://kit.fontawesome.com/cbd9f3e301.js" crossorigin="anonymous"></script>
     </body>
 </html>
